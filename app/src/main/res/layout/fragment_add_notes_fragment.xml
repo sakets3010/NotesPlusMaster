@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Add_notes_fragment"
+        android:background="@drawable/app_background2">
+
+        <!-- TODO: Update blank fragment layout -->
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Title"
+            android:textColorHint="@android:color/holo_blue_bright"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/roboto"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edit_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="Add Note"
+            android:inputType="textPersonName"
+            android:minHeight="100dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textColorHint="@android:color/holo_blue_bright"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_title" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:src="@drawable/ic_save_foreground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
