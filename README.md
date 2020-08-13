@@ -1,1 +1,1 @@
-A notes app.
+A notes app with sharing and deleting features.
